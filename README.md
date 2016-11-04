@@ -67,4 +67,4 @@ cmsdev node {app|wx|www|admin} -- 开发调试时执行的命令
 * docker exec -it [容器名字] /bin/bash -- 进入容器
 * docker rm [容器ID] [-f] -- 删除容器[强制删除]
 * docker restart [容器ID] -- 重启容器
-* docker run --name=nodecms -t -i -p 80:80 -p 50000:50000 -v /data/:/data/ 1e8a237d4bb0 /bin/bash -- 启动容器
+* docker run --name=nodecms -t -i -p 80:80 -p 50000:50000 -p 27017:27017 -v /data/:/data/ 1e8a237d4bb0 /bin/bash -- 启动容器
