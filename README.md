@@ -48,7 +48,7 @@ docker pull hub.c.163.com/promeyang/node-cms:latest
 ### 启动环境容器 container
 
 ```
-docker run --name=nodecms -t -i -p [映射的端口]:80 -p 50000:50000 -v [开发机上开发目录]:/data/LRKJ-CMS.com/LRKJ-CMS/ [镜像ID] /bin/bash
+docker run --name=nodecms -t -i -p [映射的端口]:80 -p 50000:50000 -p 27017:27017 -v [开发机上开发目录]:/data/LRKJ-CMS.com/LRKJ-CMS/ [镜像ID] /bin/bash
 
 ```
 
